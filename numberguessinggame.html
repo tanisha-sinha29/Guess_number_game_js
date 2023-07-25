@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="section1" class="container text-center mt-5">
+        <button class="btn btn-warning btn-lg" onclick="generate_number_btn_click()">Generate Number</button>
+    </div>
+
+    <div id="section2" class="container">
+        <div class="row mt-5">
+
+            <div class="col-12 text-center">
+                <img src="https://i.pinimg.com/originals/96/02/e4/9602e410f5cda88aaa033d2658e2386a.gif" alt="">
+                <p class="text-danger">
+                    Guess the number between 1 to 10**
+                </p>
+                <div class="form-group w-25 mx-auto">
+                    <input 
+                    id="field"
+                     type="text" placeholder="Enter Here" class="form-control">
+                </div>
+                <button class="btn btn-primary btn-sn mt-4" onclick="check_number()">
+                    check
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center" id="section3">
+        <img 
+        class="img-fluid"
+        style="width: 250px;"
+        src="https://media.tenor.com/t5DMW5PI8mgAAAAi/loading-green-loading.gif" alt="">
+        <h2>Generating Number.......</h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
